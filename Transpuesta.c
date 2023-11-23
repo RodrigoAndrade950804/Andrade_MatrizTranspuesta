@@ -16,7 +16,7 @@ int main(int argc, char const *argv[])
     srand(time(NULL));
     // Entrada de resulado 1 e impresion de titulo de matriz original
     int Matriz[n][m];
-    printf("Matriz Original: \n");
+    printf("\nMatriz Original:");
     // Inicio de funciones
     for (int i = 0; i < n; i++)
     {
@@ -29,19 +29,18 @@ int main(int argc, char const *argv[])
         }
     }
     // Entrada de resulado 2 e impresion de titulo de matriz transpuesta
-    int Matriz2[m][n];
-    printf("\n");
-    printf("\nMatriz Transpuesta: \n \n");
+    int Matriz2[m][n];    
+    printf("\nMatriz Transpuesta:");
 
     for (int i = 0; i < n; i++)
     {
+        printf("\n");
         for (int j = 0; j < m; j++)
         {
             // Calculos necesarios la matriz transpuesta
             Matriz2[i][j] = Matriz[j][i];
             printf("%d\t", Matriz2[i][j]);
-        }
-        printf("\n");
+        }        
     }
     return 0;
 }
